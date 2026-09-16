@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lift Technology — Raúl Pinzón</title>
+  <meta name="description" content="Tarjeta digital de Raúl Pinzón, Gerente de Operaciones. Ingeniería en elevación, interventoría NTC 5926 y cobertura en Bogotá y alrededores." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#0b0b0c; --ink-2:#161618; --paper:#f6f3ec; --paper-2:#ece7db; --gold:#f5c400; --gold-deep:#c99a00; --steel:#9a9a94; --steel-2:#5c5c58; --ok:#1f8a4c; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink); }
+    body { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    h1, h2, h3 { font-family: Oswald, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .04em; margin: 0; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 96px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0 24px; }
+    .nav { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px; border-radius: 10px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer; }
+    .btn-gold { background: var(--gold); color: var(--ink); }
+    .btn-ink { background: var(--ink); color: var(--paper); }
+    .btn-line { background: transparent; color: var(--ink); border: 1px solid rgba(11,11,12,.2); }
+    .card { overflow: hidden; border-radius: 22px; background: var(--ink); color: var(--paper); box-shadow: 0 18px 40px -18px rgba(0,0,0,.55); }
+    .hero { position: relative; padding: 28px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, #0b0b0c, rgba(11,11,12,.72)); }
+    .hero > * { position: relative; }
+    .mark { width: 64px; height: 64px; color: var(--gold); flex-shrink: 0; }
+    .goldbar { background: var(--gold); color: var(--ink); padding: 20px 28px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: end; }
+    .goldbar a { text-decoration: none; }
+    .goldbar a:hover { text-decoration: underline; }
+    .kicker { font-size: 11px; font-weight: 700; letter-spacing: .32em; text-transform: uppercase; color: var(--steel-2); }
+    .pitch { max-width: 720px; font-size: clamp(28px, 5vw, 44px); line-height: 1.05; margin: 18px 0; }
+    .grid2, .grid3, .cta { display: grid; gap: 14px; }
+    @media (min-width: 800px) { .grid2 { grid-template-columns: 1fr 1fr; } .grid3 { grid-template-columns: 1fr 1fr 1fr; } }
+    .panel { background: var(--paper-2); border-radius: 16px; padding: 20px; }
+    @media (min-width: 700px) { .cta { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    .cta a { min-height: 88px; padding: 16px; border-radius: 14px; text-decoration: none; display: flex; flex-direction: column; justify-content: center; }
+    .cta .gold { background: var(--gold); color: var(--ink); }
+    .cta .ink { background: var(--ink); color: var(--paper); }
+    .cta .out { background: var(--paper); color: var(--ink); border: 1px solid rgba(11,11,12,.15); }
+    .cta small { opacity: .75; margin-top: 6px; }
+    section { margin-top: 56px; }
+    .plan { border-radius: 16px; padding: 20px; background: var(--paper-2); }
+    .plan.rec { background: var(--ink); color: var(--paper); outline: 2px solid var(--gold); }
+    ul.rows { list-style: none; padding: 0; margin: 18px 0; }
+    ul.rows li { display: flex; gap: 8px; margin: 10px 0; font-size: 14px; }
+    .muted { color: var(--steel-2); }
+    .steel { color: var(--steel); }
+    form { display: grid; gap: 12px; }
+    input, select, textarea { width: 100%; min-height: 46px; border-radius: 10px; border: 1px solid rgba(11,11,12,.18); background: #fff; padding: 10px 12px; font: inherit; }
+    textarea { min-height: 110px; }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(11,11,12,.12); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .sticky { position: fixed; left: 0; right: 0; bottom: 0; background: var(--ink); color: var(--paper); display: flex; }
+    .sticky a { flex: 1; min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .sticky .wa { background: var(--gold); color: var(--ink); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <strong style="letter-spacing:.18em; font-size:12px;">LIFT TECHNOLOGY</strong>
+      <nav class="nav">
+        <a class="btn btn-gold" href="#cotizar">Cotizar</a>
+        <a class="btn btn-line" href="#tarjeta">Tarjeta digital</a>
+      </nav>
+    </header>
+    <p class="kicker" id="tarjeta">Tarjeta digital</p>
+    <article class="card">
+      <div class="hero">
+        <div style="display:flex; gap:12px; align-items:flex-start;">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="4" y="10" width="5" height="30" fill="currentColor" />
+            <rect x="12" y="6" width="5" height="34" fill="currentColor" />
+            <rect x="20" y="14" width="5" height="26" fill="currentColor" />
+            <rect x="28" y="8" width="5" height="32" fill="currentColor" />
+            <rect x="8" y="44" width="2" height="14" fill="currentColor" opacity=".85" />
+            <rect x="15" y="44" width="2" height="16" fill="currentColor" opacity=".85" />
+            <rect x="22" y="44" width="2" height="12" fill="currentColor" opacity=".85" />
+            <rect x="29" y="44" width="2" height="15" fill="currentColor" opacity=".85" />
+            <rect x="38" y="18" width="22" height="22" fill="#F6F3EC" />
+            <path d="M49 24 L56 36 H42 Z" fill="#0B0B0C" />
+          </svg>
+          <div>
+            <h1 style="font-size:36px; line-height:1;">Lift <span style="color:var(--gold)">Technology</span></h1>
+            <p class="steel" style="margin:8px 0 0; font-size:11px; letter-spacing:.28em; text-transform:uppercase;">ingeniería en elevación</p>
+          </div>
+        </div>
+        <p class="steel" style="max-width:240px;">Ingeniería en Elevación y Transporte Vertical</p>
+      </div>
+      <div class="goldbar">
+        <div>
+          <h2 style="font-size:32px;">Raúl Pinzón</h2>
+          <p style="margin:8px 0 0; font-size:11px; letter-spacing:.26em; text-transform:uppercase; opacity:.7;">Gerente de Operaciones</p>
+        </div>
+        <div style="font-size:14px; line-height:1.7;">
+          <div><a href="tel:+573132735873">313 273 5873</a></div>
+          <div><a href="mailto:proyectos1liftechnology@gmail.com">proyectos1liftechnology@gmail.com</a></div>
+          <div>Bogotá y sus alrededores</div>
+        </div>
+      </div>
+    </article>
+    <h2 class="pitch">Seguridad vertical con respuesta inmediata. Su edificio no se detiene: mantenimiento, interventoría y modernización.</h2>
+    <div class="cta">
+      <a class="gold" href="https://wa.me/573132735873?text=URGENCIA%20%E2%80%94%20Necesito%20atenci%C3%B3n%20inmediata%20para%20un%20ascensor.">Urgencias<small>Rescate y fallas críticas</small></a>
+      <a class="ink" href="#cotizar">Cotizar mantenimiento<small>Visita técnica sin costo</small></a>
+      <a class="out" href="#portafolio">Ver portafolio<small>Servicios y planes</small></a>
+      <a class="out" href="#guardar">Guardar contacto<small>vCard en su teléfono</small></a>
+    </div>
+    <section>
+      <p class="kicker">Quiénes somos</p>
+      <div class="grid2" style="margin-top:16px;">
+        <div>
+          <h2 style="font-size:32px;">Ingeniería independiente para copropiedades</h2>
+          <p>Lift Technology supervisa, mantiene y moderniza ascensores con criterio técnico, no comercial. Interventoría NTC 5926-1 a 5 y control de maniobra Monarch.</p>
+        </div>
+        <img alt="Hueco de ascensor" src="https://images.unsplash.com/photo-1486406149826-d0d9d0f3cd4d?auto=format&fit=crop&w=1200&q=80" style="border-radius:16px; min-height:220px; object-fit:cover;" />
+      </div>
+    </section>
+    <section id="portafolio">
+      <p class="kicker">Portafolio</p>
+      <div class="grid3" style="margin-top:16px;">
+        <article class="panel"><h3>Interventoría Técnica</h3><p>Supervisión neutral, auditorías y peritajes. Expertos como auditores en la NTC 5926-1, 2, 3, 4 y 5.</p></article>
+        <article class="panel"><h3>Mantenimiento Multimarca</h3><p>Otis, KONE, Schindler, Mitsubishi, Hyundai y más, con repuestos de alta calidad.</p></article>
+        <article class="panel"><h3>Modernización Integral</h3><p>Cuadros de mando, control de maniobra Monarch, variadores VVVF y remodelación de cabinas.</p></article>
+      </div>
+    </section>
+    <section>
+      <p class="kicker">Matriz de planes</p>
+      <div class="grid3" style="margin-top:16px;">
+        <article class="plan"><h3>Plan Básico</h3><p class="muted">Rutina legal, sin extras.</p><ul class="rows"><li>✓ Mantenimiento mensual NTC 5926-1</li><li>✓ Reporte fotográfico simple</li><li>✓ Emergencias en horario hábil</li><li class="muted">— Acompañamiento ONAC no aplica</li></ul><a class="btn btn-ink" href="#cotizar">Solicitar Plan Básico</a></article>
+        <article class="plan rec"><p style="color:var(--gold); font-size:11px; letter-spacing:.24em; text-transform:uppercase; margin:0 0 8px;">Recomendado</p><h3>Plan Preventivo Pro</h3><p class="steel">El estándar para copropiedades.</p><ul class="rows"><li>✓ Mantenimiento mensual NTC 5926-1</li><li>✓ Reporte fotográfico detallado</li><li>✓ Atención de emergencias incluida</li><li>✓ Acompañamiento inspección ONAC</li></ul><a class="btn btn-gold" href="#cotizar">Solicitar Plan Preventivo Pro</a></article>
+        <article class="plan"><h3>Interventoría Integral</h3><p class="muted">Supervisión independiente del contrato.</p><ul class="rows"><li>✓ Mantenimiento NTC 5926-1 supervisado</li><li>✓ Auditoría fotográfica completa</li><li>✓ Emergencias con prioridad alta</li><li>✓ Auditor externo para inspección ONAC</li></ul><a class="btn btn-ink" href="#cotizar">Solicitar Interventoría</a></article>
+      </div>
+    </section>
+    <section>
+      <p class="kicker">Modernización eficiente</p>
+      <div class="card" style="margin-top:16px;"><div style="padding:28px;"><h2 style="font-size:32px;">Renueve su equipo sin grandes obras</h2><p class="steel">Control de maniobra Monarch, tecnología VVVF e iluminación inteligente. Hasta 40% menos en la factura eléctrica de zonas comunes.</p></div></div>
+    </section>
+    <section id="guardar">
+      <p class="kicker">Guardar contacto</p>
+      <h2 style="margin:12px 0;">Llévenos en el teléfono</h2>
+      <button class="btn btn-ink" type="button" id="vcard">Descargar vCard</button>
+    </section>
+    <section id="cotizar">
+      <p class="kicker">Cotizar</p>
+      <h2 style="margin:12px 0 16px;">Visita técnica sin compromiso</h2>
+      <form id="quote">
+        <input name="nombre" required placeholder="Nombre" />
+        <input name="rol" placeholder="Cargo / copropiedad" />
+        <input name="torres" placeholder="Torres / equipos" />
+        <select name="servicio">
+          <option>Mantenimiento preventivo NTC 5926-1</option>
+          <option>Interventoría técnica NTC 5926-1 a 5</option>
+          <option>Modernización / control Monarch</option>
+          <option>Pre-auditoría ONAC</option>
+          <option>Emergencia / rescate</option>
+        </select>
+        <textarea name="mensaje" placeholder="Detalle de la solicitud"></textarea>
+        <button class="btn btn-gold" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </section>
+    <footer>
+      <div><strong>Lift Technology</strong><div>Raúl Pinzón · Gerente de Operaciones</div><div>Bogotá y sus alrededores</div></div>
+      <div><div><a href="tel:+573132735873">313 273 5873</a></div><div><a href="mailto:proyectos1liftechnology@gmail.com">proyectos1liftechnology@gmail.com</a></div></div>
+    </footer>
+  </div>
+  <div class="sticky">
+    <a href="tel:+573132735873">Llamar</a>
+    <a class="wa" href="https://wa.me/573132735873?text=Hola%20Ra%C3%BAl%2C%20quiero%20cotizar%20un%20plan%20de%20mantenimiento.">WhatsApp</a>
+  </div>
+  <script>
+    document.getElementById("vcard").addEventListener("click", function () {
+      var body = ["BEGIN:VCARD","VERSION:3.0","FN:Raul Pinzon","N:Pinzon;Raul;;;","ORG:Lift Technology","TITLE:Gerente de Operaciones","TEL;TYPE=CELL,VOICE:+573132735873","EMAIL;TYPE=WORK:proyectos1liftechnology@gmail.com","NOTE:Ingenieria en Elevacion. Interventoria NTC 5926-1 a 5. Modernizacion Monarch. Bogota y alrededores.","END:VCARD"].join("\r\n");
+      var blob = new Blob([body], { type: "text/vcard" });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "raul-pinzon-lift-technology.vcf";
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+    document.getElementById("quote").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = Object.fromEntries(new FormData(e.target).entries());
+      var text = "Hola Raul, soy " + (d.nombre || "") + " (" + (d.rol || "administracion") + "). Quiero cotizar: " + d.servicio + ". Torres/equipos: " + (d.torres || "a confirmar") + ". " + (d.mensaje || "Pueden agendar visita tecnica?");
+      window.open("https://wa.me/573132735873?text=" + encodeURIComponent(text), "_blank");
+    });
+  </script>
+</body>
+</html>
